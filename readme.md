@@ -22,7 +22,6 @@ Karmaşık arayüzlerden arındırılmış, tamamen performansa odaklanan "Dark 
 <img width="705" height="869" alt="image" src="https://github.com/user-attachments/assets/89b01649-f682-48ae-bb00-436efced6917" />
 
 ## 🚀 Kurulum & Çalıştırma
-![Uploading image.png…]()
 
 Projeyi bilgisayarınıza klonlayın ve çalıştırın:
 
