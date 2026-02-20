@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --orange-primary: #ea580c;
+  --orange-hover: #f97316;
+  --bg-black: #000000;
+  --bg-neutral: #0a0a0a;
+  --border-neutral: #171717;
+}
+
+body {
+  background-color: var(--bg-black);
+  color: #e5e5e5;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.replog-title {
+  font-size: 4rem;
+  font-weight: 950;
+  font-style: italic;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #f97316, #dc2626, #ea580c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 10px rgba(234, 88, 12, 0.4));
+  line-height: 1;
+}
+
+.skew-btn {
+  transform: skewX(-10deg);
+  transition: all 0.2s ease;
+}
+
+.skew-btn > * {
+  transform: skewX(10deg);
+}
+
+.skew-btn:active {
+  transform: skewX(-10deg) scale(0.95);
+}
+
+.input-brutalist {
+  background: #0a0a0a;
+  border: 1px solid #171717;
+  border-left: 4px solid var(--orange-primary);
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-brutalist:focus {
+  background: #121212;
+  border-color: var(--orange-primary);
+}
+
+.stat-card {
+  background: #0a0a0a;
+  border: 1px solid #171717;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  background: rgba(234, 88, 12, 0.1);
+  filter: blur(20px);
+}
+
+.card-log {
+  background: #0a0a0a;
+  border-left: 4px solid #262626;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.card-log:hover {
+  background: #121212;
+  border-left-color: var(--orange-primary);
+}
+
+[color-scheme="dark"] {
+  color-scheme: dark;
+}
